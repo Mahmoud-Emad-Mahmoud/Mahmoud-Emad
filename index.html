@@ -14,6 +14,7 @@
             body { padding-top: 0; padding-left: 17rem; }
             #sideNav { text-align: center; top: 0; left: 0; display: flex; flex-direction: column; width: 17rem; height: 100vh; position: fixed; background-color: #1a3c5e; justify-content: center; align-items: center; }
             #sideNav .navbar-nav { display: flex; flex-direction: column; width: 100%; padding: 0; }
+            /* القائمة الجانبية: عريضة وفي النص */
             .nav-link { text-align: center !important; font-weight: 800 !important; font-family: 'Saira Extra Condensed', sans-serif; color: rgba(255, 255, 255, 0.7) !important; text-transform: uppercase; font-size: 1.2rem; padding: 0.8rem 0 !important; display: block; width: 100%; }
         }
         .text-primary { color: #1a3c5e !important; }
@@ -24,19 +25,24 @@
         .img-profile { width: 160px; height: 160px; object-fit: cover; border: 8px solid rgba(255, 255, 255, 0.2); margin-bottom: 2rem; }
         section.resume-section { display: flex; align-items: center; padding: 3rem; min-height: 100vh; border-bottom: 1px solid #dee2e6; }
         
-        /* التعديل الجديد للمسافات */
-        .social-icons-container { 
-            display: flex; 
-            flex-direction: column; /* يخلي العناصر تحت بعض */
-            align-items: flex-start; 
-            gap: 25px; /* مسافة كبيرة بين اللينك والزرار */
-            margin-top: 30px; 
-        }
+        /* حل مشكلة المسافات والتداخل نهائياً */
+        .action-area { margin-top: 40px; clear: both; }
+        .social-icon-box { margin-bottom: 25px; display: block; } /* الأيقونة في بلوك لوحدها */
         
-        .social-icon { display: inline-flex; align-items: center; justify-content: center; height: 3.5rem; width: 3.5rem; background-color: #495057; color: #fff; border-radius: 100%; font-size: 1.5rem; text-decoration: none; transition: 0.3s; }
-        .social-icon:hover { background-color: #1a3c5e; }
-
-        .btn-cv { background-color: #1a3c5e; color: white !important; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 10px; border: 2px solid #1a3c5e; transition: 0.3s; cursor: pointer; }
+        .social-icon { display: inline-flex; align-items: center; justify-content: center; height: 3.5rem; width: 3.5rem; background-color: #495057; color: #fff; border-radius: 100%; font-size: 1.5rem; text-decoration: none; }
+        
+        .btn-cv { 
+            background-color: #1a3c5e; 
+            color: white !important; 
+            padding: 15px 30px; 
+            border-radius: 8px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            display: inline-block; /* الزرار في بلوك لوحده */
+            border: 2px solid #1a3c5e; 
+            transition: 0.3s;
+            margin-top: 10px;
+        }
         .btn-cv:hover { background-color: transparent; color: #1a3c5e !important; }
         
         .exp-list { list-style: none; padding-left: 0; }
@@ -65,13 +71,28 @@
                 <div class="subheading mb-4">Banha, Egypt · 01155672689 · 01222390425 · <a href="mailto:Mahmoudemad7497@gmail.com">Mahmoudemad7497@gmail.com</a></div>
                 <p class="lead mb-4">Dedicated Electrical Power and Machines Engineering graduate (Grade: Very Good) with 5 years of specialized onshore drilling experience with the Egyptian Drilling Company (EDC). Expert in the commissioning, maintenance, and complex troubleshooting of HH Electric VFD Rigs (1500 HP) and Caterpillar power generation sets (3512B, C15, 3406). Proven track record in optimizing PLC systems (Siemens, Schneider, Mitsubishi) and Rig-Sense instrumentation to maximize uptime and ensure safety in H2S environments.</p>
                 
-                <div class="social-icons-container">
-                    <a class="social-icon" href="https://www.linkedin.com/in/mahmoud-emad-0bb58913b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    
+                <div class="action-area">
+                    <div class="social-icon-box">
+                        <a class="social-icon" href="https://www.linkedin.com/in/mahmoud-emad-0bb58913b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                     <a href="Mahmoud_Emad_Electrical_Engineer.pdf" class="btn-cv" download="Mahmoud_Emad_Electrical_Engineer.pdf">
                         <i class="fas fa-file-download"></i> Download Full CV
                     </a>
                 </div>
+            </div>
+        </section>
+
+        <section class="resume-section" id="expertise">
+            <div class="w-100">
+                <h2 class="mb-5">Technical Expertise</h2>
+                <ul class="exp-list">
+                    <li><strong>Rig Power & VFD:</strong> HH Electric VFD (1500 HP), ABB Drives, MCC Maintenance.</li>
+                    <li><strong>Power Generation:</strong> CAT 3512B, C15 Emergency Gen, CAT 3406, Transformers.</li>
+                    <li><strong>Automation & PLC:</strong> Siemens S7-300, Schneider M340, Mitsubishi Q-Series, Step-7 Troubleshooting.</li>
+                    <li><strong>Drilling Equipment:</strong> Varco TDS-11 Top Drive, Draw works Controls, AC Motor Maintenance.</li>
+                    <li><strong>Instrumentation:</strong> Rig-Sense (Controls/Sensors), Honeywell H2S Detection, CCTV.</li>
+                    <li><strong>Software/Design:</strong> Revit (Advanced), AutoCAD, Dialux, CMMS, MS Office.</li>
+                </ul>
             </div>
         </section>
 
@@ -92,9 +113,31 @@
                         <li><strong>Safety & Security Systems:</strong> Guaranteed the continuous operational integrity of the Honeywell H2S Gas Detection system and CCTV surveillance, maintaining a secure environment and full compliance with safety protocols.</li>
                     </ul>
                 </div>
+
+                <div class="mb-5">
+                    <h3 class="mb-0 text-primary">Electrical Maintenance Engineer</h3>
+                    <div class="subheading text-dark">May 2022 – Jan 2025 | EDC</div>
+                    <ul class="exp-list">
+                        <li>Performed daily preventative and corrective maintenance on MCC panels and low/medium voltage distribution systems.</li>
+                        <li>Assisted in the inspection and routine servicing of Caterpillar 3512B and C15 generator sets.</li>
+                        <li>Supported senior engineers in troubleshooting PLC and VFD control circuits to maintain operational continuity.</li>
+                        <li>Executed onsite repairs for AC motors and transformers, ensuring equipment reliability.</li>
+                        <li>Monitored Rig-Sense instrumentation and sensor accuracy for real-time drilling data acquisition.</li>
+                    </ul>
                 </div>
+            </div>
         </section>
-        </div>
+
+        <section class="resume-section" id="education">
+            <div class="w-100">
+                <h2 class="mb-5">Education</h2>
+                <h3>El-Shorouk University</h3>
+                <div class="subheading">Bachelor's of Electrical Engineering (2015 - 2020)</div>
+                <p>Major: Electrical Power and Machines Engineering | Grade: <strong>Very Good</strong></p>
+                <p>Graduation Project: Design of Electrical Systems with Revit Software | Grade: <strong>Excellent</strong></p>
+            </div>
+        </section>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
