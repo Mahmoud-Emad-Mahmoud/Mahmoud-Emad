@@ -16,11 +16,11 @@
         .text-primary { color: var(--primary) !important; }
         
         /* Navigation */
-        #sideNav { width: 17rem; height: 100vh; position: fixed; top: 0; left: 0; display: flex; flex-direction: column; text-align: center; z-index: 1030; }
+        #sideNav { width: 17rem; height: 100vh; position: fixed; top: 0; left: 0; display: flex; flex-direction: column; text-align: center; }
         #sideNav .nav-link { font-weight: 800; text-transform: uppercase; color: rgba(255,255,255,0.6); padding: 0.5rem 1rem; }
         #sideNav .nav-link:hover, #sideNav .nav-link.active { color: #fff; }
 
-        /* ضبط الصورة */
+        /* ضبط الصورة النهائي */
         .img-profile { 
             width: 160px; height: 160px; 
             object-fit: cover; 
@@ -35,31 +35,9 @@
         .exp-list li { margin-bottom: 0.5rem; }
         .date { color: var(--primary); font-weight: 700; min-width: 150px; text-align: right; }
         
-        /* زر تحميل الـ CV */
-        .btn-cv {
-            background-color: var(--primary);
-            color: white !important;
-            padding: 10px 25px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            transition: 0.3s ease;
-            border: 2px solid var(--primary);
-            margin-top: 10px;
-        }
-        .btn-cv:hover {
-            background-color: transparent;
-            color: var(--primary) !important;
-            transform: translateY(-3px);
-        }
-
         @media (max-width: 992px) {
             #sideNav { width: 100%; height: auto; position: relative; }
             body { padding-left: 0; }
-            .date { text-align: left; margin-bottom: 10px; }
         }
         @media (min-width: 992px) { body { padding-left: 17rem; } }
     </style>
@@ -77,7 +55,7 @@
         <div class="collapse navbar-collapse" id="navRes">
             <ul class="navbar-nav w-100">
                 <li class="nav-item"><a class="nav-link" href="#summary">Summary</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">Technical Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#expertise">Expertise</a></li>
                 <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                 <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                 <li class="nav-item"><a class="nav-link" href="#certs">Certifications</a></li>
@@ -91,25 +69,21 @@
             <div class="resume-section-content">
                 <h1 class="mb-0">Mahmoud <span class="text-primary">Emad</span></h1>
                 <div class="subheading mb-5">Banha, Egypt · 01155672689 · 01222390425 · <a href="mailto:Mahmoudemad7497@gmail.com">Mahmoudemad7497@gmail.com</a></div>
-                <p class="lead">Dedicated Electrical Power and Machines Engineering graduate (Grade: Very Good) with 5 years of specialized onshore drilling experience with the Egyptian Drilling Company (EDC). Expert in the commissioning, maintenance, and complex troubleshooting of HH Electric VFD Rigs (1500 HP) and Caterpillar power generation sets (3512B, C15, 3406).</p>
-                
-                <div class="d-flex align-items-center flex-wrap gap-3 mt-4">
-                    <a class="text-dark fs-2" href="https://www.linkedin.com/in/mahmoud-emad-0bb58913b/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="Mahmoud_Emad_CV.pdf" class="btn-cv" download>
-                        <i class="fas fa-file-download"></i> Download CV
-                    </a>
+                <p class="lead">Dedicated Electrical Power and Machines Engineering graduate (Grade: Very Good) with 5 years of specialized onshore drilling experience with the Egyptian Drilling Company (EDC). Expert in the commissioning, maintenance, and complex troubleshooting of HH Electric VFD Rigs (1500 HP) and Caterpillar power generation sets (3512B, C15, 3406). Proven track record in optimizing PLC systems (Siemens, Schneider, Mitsubishi) and Rig-Sense instrumentation.</p>
+                <div class="mt-4">
+                    <a class="text-dark fs-3 me-3" href="https://www.linkedin.com/in/mahmoud-emad-0bb58913b/"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
         </section>
 
-        <section class="resume-section" id="skills">
+        <section class="resume-section" id="expertise">
             <div class="resume-section-content">
-                <h2 class="mb-5">Technical Skills</h2>
+                <h2 class="mb-5">Technical Expertise</h2>
                 <div class="row">
-                    <div class="col-md-6 mb-3"><strong>• Rig Power & VFD:</strong> HH Electric VFD (1500 HP), ABB Drives, MCC Maintenance.</div>
-                    <div class="col-md-6 mb-3"><strong>• Power Generation:</strong> CAT 3512B, C15 Emergency Gen, CAT 3406, Transformers.</div>
-                    <div class="col-md-6 mb-3"><strong>• Automation & PLC:</strong> Siemens S7-300, Schneider M340, Mitsubishi Q-Series.</div>
-                    <div class="col-md-6 mb-3"><strong>• Software:</strong> Revit (Advanced), AutoCAD, Dialux, MS Office.</div>
+                    <div class="col-md-6 mb-3"><strong>• Rig Power & VFD:</strong> HH Electric VFD, ABB Drives, MCC.</div>
+                    <div class="col-md-6 mb-3"><strong>• Power Generation:</strong> CAT 3512B, C15, 3406, Transformers.</div>
+                    <div class="col-md-6 mb-3"><strong>• Automation:</strong> Siemens S7-300, Schneider M340, Mitsubishi Q-Series.</div>
+                    <div class="col-md-6 mb-3"><strong>• Software:</strong> Revit (Advanced), AutoCAD, Dialux.</div>
                 </div>
             </div>
         </section>
@@ -123,9 +97,10 @@
                         <h3 class="mb-0">Senior Electrical Maintenance Engineer</h3>
                         <div class="subheading">Egyptian Drilling Company (EDC) | Rig 72</div>
                         <ul class="exp-list">
-                            <li><strong>System Reliability:</strong> Orchestrated maintenance for CAT 3512B generators, ensuring 100% power availability.</li>
-                            <li><strong>Advanced VFD:</strong> Managed Oilfield Electric VFD systems, reducing non-productive time (NPT).</li>
-                            <li><strong>PLC Management:</strong> Resolved hardware and logic faults in Siemens S7-300 & Schneider frameworks.</li>
+                            <li><strong>System Reliability:</strong> Orchestrated maintenance for CAT 3512B generators.</li>
+                            <li><strong>Advanced VFD:</strong> Managed Oilfield Electric VFD systems, reducing NPT.</li>
+                            <li><strong>Power Mastery:</strong> Spearheaded load-sharing for CAT 3512B, C15, and 3406.</li>
+                            <li><strong>PLC & Automation:</strong> Resolved hardware/logic faults in Siemens & Schneider frameworks.</li>
                         </ul>
                     </div>
                     <div class="date">Jan 2025 – Present</div>
@@ -135,9 +110,18 @@
                     <div class="flex-grow-1">
                         <h3 class="mb-0">Electrical Maintenance Engineer</h3>
                         <div class="subheading">EDC</div>
-                        <p>Daily maintenance on MCC panels and LV/MV distribution systems. Assisted in Caterpillar 3512B servicing and troubleshooting PLC control circuits.</p>
+                        <p>Daily maintenance on MCC panels and LV/MV distribution systems. Assisted in Caterpillar 3512B servicing.</p>
                     </div>
                     <div class="date">May 2022 – Jan 2025</div>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Assigned Teaching Assistant</h3>
+                        <div class="subheading">El Shorouk Academy</div>
+                        <p>Delivered academic lectures and led technical discussion sessions for engineering students.</p>
+                    </div>
+                    <div class="date">Oct 2021 – May 2022</div>
                 </div>
             </div>
         </section>
@@ -147,24 +131,16 @@
                 <h2 class="mb-5">Education</h2>
                 <h3 class="mb-0">El-Shorouk University</h3>
                 <div class="subheading">Bachelor's of Electrical Engineering (2015 - 2020)</div>
-                <p>Major: Electrical Power and Machines Engineering | Grade: <strong>Very Good</strong></p>
-                <p>Project: Design of Electrical Systems in Buildings with Revit | Grade: <strong>Excellent</strong></p>
+                <p>Grade: <strong>Very Good</strong> | Project: Revit Electrical Design (<strong>Excellent</strong>)</p>
             </div>
         </section>
 
         <section class="resume-section" id="certs">
             <div class="resume-section-content">
-                <h2 class="mb-5">Certifications & Languages</h2>
-                <div class="row">
-                    <div class="col-md-6">
-                        <p><strong>• Automation:</strong> ABB VFD Programming, PLC Step-7 300 Repair.</p>
-                        <p><strong>• Rig Safety:</strong> PTW, H2S Awareness, Firefighting, First Aid.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <p><strong>• Languages:</strong> Arabic (Native), English (Professional Proficiency).</p>
-                        <p><strong>• Soft Skills:</strong> Leadership, High-Pressure Problem Solving.</p>
-                    </div>
-                </div>
+                <h2 class="mb-5">Certifications</h2>
+                <p><strong>• Automation:</strong> ABB VFD Programming, PLC Step-7 300 Repair.</p>
+                <p><strong>• Rig Safety:</strong> PTW, H2S Awareness, Firefighting, First Aid.</p>
+                <p><strong>• Languages:</strong> Arabic (Native), English (Very Good).</p>
             </div>
         </section>
 
