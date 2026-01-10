@@ -23,7 +23,16 @@
         .subheading { font-family: 'Saira Extra Condensed', sans-serif; font-weight: 500; font-size: 1.2rem; text-transform: uppercase; color: #868e96; margin-bottom: 1rem; }
         .img-profile { width: 160px; height: 160px; object-fit: cover; border: 8px solid rgba(255, 255, 255, 0.2); margin-bottom: 2rem; }
         section.resume-section { display: flex; align-items: center; padding: 3rem; min-height: 100vh; border-bottom: 1px solid #dee2e6; }
-        .btn-cv { background-color: #1a3c5e; color: white !important; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #1a3c5e; transition: 0.3s; margin-top: 20px; cursor: pointer; }
+        
+        /* تنسيق منطقة الأزرار لمنع التداخل */
+        .social-icons-container { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; margin-top: 30px; }
+        
+        .social-icon { display: inline-flex; align-items: center; justify-content: center; height: 3.5rem; width: 3.5rem; background-color: #495057; color: #fff; border-radius: 100%; font-size: 1.5rem; text-decoration: none; transition: 0.3s; }
+        .social-icon:hover { background-color: #1a3c5e; }
+
+        .btn-cv { background-color: #1a3c5e; color: white !important; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 10px; border: 2px solid #1a3c5e; transition: 0.3s; cursor: pointer; }
+        .btn-cv:hover { background-color: transparent; color: #1a3c5e !important; }
+        
         .exp-list { list-style: none; padding-left: 0; }
         .exp-list li { position: relative; padding-left: 1.2rem; margin-bottom: 0.5rem; }
         .exp-list li::before { content: "•"; color: #1a3c5e; font-weight: bold; position: absolute; left: 0; }
@@ -49,9 +58,11 @@
                 <h1 class="mb-0">Mahmoud <span class="text-primary">Emad</span></h1>
                 <div class="subheading mb-4">Banha, Egypt · 01155672689 · 01222390425 · <a href="mailto:Mahmoudemad7497@gmail.com">Mahmoudemad7497@gmail.com</a></div>
                 <p class="lead mb-4">Dedicated Electrical Power and Machines Engineering graduate (Grade: Very Good) with 5 years of specialized onshore drilling experience with the Egyptian Drilling Company (EDC). Expert in the commissioning, maintenance, and complex troubleshooting of HH Electric VFD Rigs (1500 HP) and Caterpillar power generation sets (3512B, C15, 3406). Proven track record in optimizing PLC systems (Siemens, Schneider, Mitsubishi) and Rig-Sense instrumentation to maximize uptime and ensure safety in H2S environments.</p>
-                <div class="social-icons d-flex align-items-center">
+                
+                <div class="social-icons-container">
                     <a class="social-icon" href="https://www.linkedin.com/in/mahmoud-emad-0bb58913b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="Mahmoud_Emad_Electrical_Engineer.pdf" class="btn-cv" download="Mahmoud_Emad_Electrical_Engineer.pdf" onclick="handleDownload(event, this.href)">
+                    
+                    <a href="Mahmoud_Emad_Electrical_Engineer.pdf" class="btn-cv" download="Mahmoud_Emad_Electrical_Engineer.pdf">
                         <i class="fas fa-file-download"></i> Download Full CV
                     </a>
                 </div>
@@ -80,13 +91,13 @@
                     <div class="subheading text-dark">Egyptian Drilling Company EDC | Onshore Rig | EDC Rig 72 | HH Electric VFD Rig 1500 HP | JAN 2025 – Present</div>
                     <ul class="exp-list">
                         <li><strong>System Reliability Leadership:</strong> Orchestrated comprehensive maintenance for Caterpillar 3512B generators, ensuring 100% power availability for critical drilling operations.</li>
-                        <li><strong>Advanced VFD Troubleshooting:</strong> Managed advanced troubleshooting and preventative maintenance for Oilfield Electric VFD systems, ensuring precise control of drilling motors and minimal system downtime and resolving complex drive faults to minimize non-productive time (NPT).</li>
-                        <li><strong>Power Generation Mastery:</strong> Spearheaded full-cycle maintenance and load-sharing synchronization for Caterpillar 3512B, C15, and 3406 generator sets, guaranteeing 100% power reliability for rig and camp operations.</li>
-                        <li><strong>PLC & Automation Management:</strong> Diagnosed and resolved complex hardware and logic faults within Siemens S7-300, Schneider M340, and Mitsubishi Q-series PLC frameworks to maintain seamless rig automation.</li>
-                        <li><strong>Critical Equipment Oversight:</strong> Directed electrical maintenance for high-impact assets including Varco TDS-11 Top Drive and Drawworks control systems, ensuring peak performance during critical drilling phases.</li>
-                        <li><strong>Motor Control & Reliability:</strong> Optimized MCC (Motor Control Center) panel integrity and performed precision repairs on AC motors and transformers, resulting in a measurable reduction in unexpected equipment failures.</li>
-                        <li><strong>Instrumentation & Data:</strong> Overseeing Rig-Sense systems, including the calibration of sensors and maintenance of data acquisition controls to ensure accurate real-time drilling metrics.</li>
-                        <li><strong>Safety & Security Systems:</strong> Guaranteed the continuous operational integrity of the Honeywell H2S Gas Detection system and CCTV surveillance, maintaining a secure environment and full compliance with safety protocols.</li>
+                        <li><strong>Advanced VFD Troubleshooting:</strong> Managed advanced troubleshooting and preventative maintenance for Oilfield Electric VFD systems, ensuring precise control of drilling motors and resolving complex drive faults to minimize non-productive time (NPT).</li>
+                        <li><strong>Power Generation Mastery:</strong> Spearheaded full-cycle maintenance and load-sharing synchronization for Caterpillar 3512B, C15, and 3406 generator sets.</li>
+                        <li><strong>PLC & Automation Management:</strong> Diagnosed and resolved complex hardware and logic faults within Siemens S7-300, Schneider M340, and Mitsubishi Q-series.</li>
+                        <li><strong>Critical Equipment Oversight:</strong> Directed electrical maintenance for high-impact assets including Varco TDS-11 Top Drive and Drawworks control systems.</li>
+                        <li><strong>Motor Control & Reliability:</strong> Optimized MCC panel integrity and performed precision repairs on AC motors and transformers.</li>
+                        <li><strong>Instrumentation & Data:</strong> Overseeing Rig-Sense systems, calibration of sensors and maintenance of data acquisition controls.</li>
+                        <li><strong>Safety & Security Systems:</strong> Guaranteed the operational integrity of the Honeywell H2S Gas Detection system and CCTV surveillance.</li>
                     </ul>
                 </div>
 
@@ -94,11 +105,9 @@
                     <h3 class="mb-0 text-primary">Electrical Maintenance Engineer</h3>
                     <div class="subheading text-dark">May 2022 – Jan 2025 | EDC</div>
                     <ul class="exp-list">
-                        <li>Performed daily preventative and corrective maintenance on MCC panels and low/medium voltage distribution systems.</li>
+                        <li>Performed daily preventative and corrective maintenance on MCC panels and distribution systems.</li>
                         <li>Assisted in the inspection and routine servicing of Caterpillar 3512B and C15 generator sets.</li>
-                        <li>Supported senior engineers in troubleshooting PLC and VFD control circuits to maintain operational continuity.</li>
-                        <li>Executed onsite repairs for AC motors and transformers, ensuring equipment reliability.</li>
-                        <li>Monitored Rig-Sense instrumentation and sensor accuracy for real-time drilling data acquisition.</li>
+                        <li>Supported senior engineers in troubleshooting PLC and VFD control circuits.</li>
                     </ul>
                 </div>
 
@@ -106,30 +115,21 @@
                     <h3 class="mb-0 text-primary">Junior Electrical Engineer</h3>
                     <div class="subheading text-dark">Oct 2020 – May 2022 | EDC</div>
                     <ul class="exp-list">
-                        <li>Developed a foundational understanding of rig power systems and safety protocols (PTW, H2S).</li>
-                        <li>Gained hands-on experience in basic electrical repairs and component replacements under supervision.</li>
-                        <li>Assisted in maintaining main camp generator sets (CAT 3406) and auxiliary equipment.</li>
-                        <li>Documented repair logs and updated maintenance records to track asset performance.</li>
+                        <li>Developed foundational understanding of rig power systems and safety protocols (PTW, H2S).</li>
+                        <li>Gained hands-on experience in basic electrical repairs and auxiliary equipment maintenance.</li>
                     </ul>
                 </div>
 
                 <div class="mb-5">
                     <h3 class="mb-0 text-primary">Assigned Teaching Assistant</h3>
                     <div class="subheading text-dark">El Shorouk Academy | Oct 2021 – May 2022</div>
-                    <ul class="exp-list">
-                        <li><strong>Technical Instruction:</strong> Delivered academic lectures and led technical discussion sessions for engineering students.</li>
-                        <li><strong>Mentorship & Guidance:</strong> Provided individual and group technical guidance, assisting students in complex problem-solving.</li>
-                    </ul>
+                    <p>Delivered academic lectures and technical discussion sessions for engineering students.</p>
                 </div>
 
                 <div class="mb-5">
                     <h3 class="mb-0 text-primary">Electrical Design Engineer</h3>
                     <div class="subheading text-dark">Idea's Consultant Office | Jan 2022 – May 2022</div>
-                    <ul class="exp-list">
-                        <li><strong>Design & Engineering:</strong> Developed comprehensive electrical designs tailored to client specifications.</li>
-                        <li><strong>Technical Proposals:</strong> Prepared detailed technical offers and material take-offs.</li>
-                        <li><strong>System Sizing:</strong> Performed equipment sizing and selection, including transformer ratings.</li>
-                    </ul>
+                    <p>Developed electrical designs using Revit and AutoCAD, prepared technical offers and proposals.</p>
                 </div>
             </div>
         </section>
@@ -139,18 +139,11 @@
                 <h2 class="mb-5">Education</h2>
                 <h3>El-Shorouk University</h3>
                 <div class="subheading">Bachelor's of Electrical Engineering (2015 - 2020)</div>
-                <p>Major: Electrical Power and Machines Engineering | Grade: <strong>Very Good</strong></p>
-                <p>Graduation Project: Design of Electrical Systems with Revit | Grade: <strong>Excellent</strong></p>
+                <p>Grade: <strong>Very Good</strong> | Project: <strong>Excellent</strong> (Electrical Design using Revit).</p>
             </div>
         </section>
     </div>
 
-    <script>
-        function handleDownload(e, url) {
-            // كود للتأكد من وجود الملف وتنبيهك لو فيه غلط
-            var fileName = "Mahmoud_Emad_Electrical_Engineer.pdf";
-            console.log("Attempting to download: " + fileName);
-        }
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
