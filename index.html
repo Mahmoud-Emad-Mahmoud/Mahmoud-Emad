@@ -15,6 +15,8 @@
             body { padding-top: 0; padding-left: 17rem; }
             #sideNav { text-align: center; top: 0; left: 0; display: flex; flex-direction: column; width: 17rem; height: 100vh; position: fixed; background-color: #1a3c5e; }
             #sideNav .navbar-nav { display: flex; flex-direction: column; width: 100%; padding: 0; margin: auto auto 2rem; }
+            /* طلبك السابق: توسيط القائمة وجعلها Bold */
+            .nav-link { text-align: center !important; font-weight: 800 !important; text-transform: uppercase; }
         }
         .text-primary { color: #1a3c5e !important; }
         h1 { font-family: 'Saira Extra Condensed', sans-serif; font-size: 5.5rem; font-weight: 700; line-height: 5rem; text-transform: uppercase; }
@@ -22,10 +24,10 @@
         h3 { font-family: 'Saira Extra Condensed', sans-serif; font-size: 1.8rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.5rem; }
         .subheading { font-family: 'Saira Extra Condensed', sans-serif; font-weight: 500; font-size: 1.4rem; text-transform: uppercase; color: #868e96; margin-bottom: 1.5rem; }
         
-        .img-profile { width: 160px; height: 160px; object-fit: cover; object-position: center 20%; border: 8px solid rgba(255, 255, 255, 0.2); }
+        .img-profile { width: 160px; height: 160px; object-fit: cover; border: 8px solid rgba(255, 255, 255, 0.2); }
         section.resume-section { display: flex; align-items: center; padding: 5rem 3rem; min-height: 100vh; border-bottom: 1px solid #dee2e6; }
         
-        .btn-download { background-color: #1a3c5e; color: white !important; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 10px; border: 2px solid #1a3c5e; transition: 0.3s; margin-top: 20px; }
+        .btn-download { background-color: #1a3c5e; color: white !important; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 10px; border: 2px solid #1a3c5e; transition: 0.3s; margin-top: 20px; cursor: pointer; }
         .btn-download:hover { background-color: transparent; color: #1a3c5e !important; }
         
         .social-icon { display: inline-flex; align-items: center; justify-content: center; height: 3.5rem; width: 3.5rem; background-color: #495057; color: #fff; border-radius: 100%; font-size: 1.5rem; margin-right: 1.5rem; text-decoration: none; }
@@ -63,7 +65,10 @@
                 <p class="lead mb-5">Dedicated Electrical Power and Machines Engineering graduate (Grade: Very Good) with 5 years of specialized onshore drilling experience with the Egyptian Drilling Company (EDC). Expert in the commissioning, maintenance, and complex troubleshooting of HH Electric VFD Rigs (1500 HP) and Caterpillar power generation sets (3512B, C15, 3406). Proven track record in optimizing PLC systems (Siemens, Schneider, Mitsubishi) and Rig-Sense instrumentation to maximize uptime and ensure safety in H2S environments.</p>
                 <div class="social-icons d-flex align-items-center">
                     <a class="social-icon" href="https://www.linkedin.com/in/mahmoud-emad-0bb58913b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="Mahmoud_Emad_CV.pdf" class="btn-download" download><i class="fas fa-file-download"></i> Download Full CV</a>
+                    
+                    <a href="./Mahmoud_Emad_CV.pdf" class="btn-download" target="_blank" download="Mahmoud_Emad_CV.pdf">
+                        <i class="fas fa-file-download"></i> Download Full CV
+                    </a>
                 </div>
             </div>
         </section>
@@ -95,7 +100,6 @@
         <section class="resume-section" id="experience">
             <div class="w-100">
                 <h2 class="mb-5">Experience</h2>
-
                 <div class="mb-5">
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <h3 class="mb-0">Senior Electrical Maintenance Engineer</h3>
