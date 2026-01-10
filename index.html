@@ -3,64 +3,132 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Mahmoud Emad Mahmoud - Senior Electrical Maintenance Engineer at Egyptian Drilling Company (EDC)." />
+        <meta name="description" content="Mahmoud Emad Mahmoud - Senior Electrical Maintenance Engineer at EDC." />
         <meta name="author" content="Mahmoud Emad Mahmoud" />
-        <title>Mahmoud Emad | Senior Electrical Maintenance Engineer</title>
+        <title>Mahmoud Emad | Portfolio</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Saira+Extra+Condensed:wght@700&display=swap" rel="stylesheet">
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+        
         <style>
             :root {
                 --primary-color: #1a3c5e; 
                 --accent-color: #d4af37; 
             }
-            body { font-family: 'Roboto', sans-serif; color: #333; line-height: 1.6; }
-            h1, h2, h3 { font-family: 'Saira Extra Condensed', sans-serif; text-transform: uppercase; margin-bottom: 0.5rem; }
-            .bg-primary { background-color: var(--primary-color) !important; }
+            body { 
+                font-family: 'Roboto', sans-serif; 
+                color: #333; 
+                padding-top: 0;
+            }
+            h1, h2, h3 { 
+                font-family: 'Saira Extra Condensed', sans-serif; 
+                text-transform: uppercase; 
+                font-weight: 700;
+            }
             .text-primary { color: var(--primary-color) !important; }
+            .bg-primary { background-color: var(--primary-color) !important; }
             
-            /* تنسيق الصورة الشخصية المطور */
+            /* Navigation */
+            #sideNav {
+                text-align: center;
+                top: 0;
+                left: 0;
+                display: flex;
+                flex-direction: column;
+                width: 17rem;
+                height: 100vh;
+                position: fixed;
+            }
+            #sideNav .navbar-brand {
+                display: flex;
+                margin: auto auto 0;
+                padding: 0.5rem;
+            }
+            #sideNav .navbar-nav {
+                flex-direction: column;
+                width: 100%;
+                margin: 0 auto auto;
+            }
+            #sideNav .nav-link {
+                font-weight: 800;
+                letter-spacing: 0.05rem;
+                text-transform: uppercase;
+                color: rgba(255, 255, 255, 0.5);
+            }
+            #sideNav .nav-link.active { color: #fff; }
+
+            /* الصورة الشخصية - الضبط النهائي */
             .img-profile {
+                max-width: 160px;
+                max-height: 160px;
                 border: 0.5rem solid rgba(255, 255, 255, 0.2);
                 object-fit: cover;
-                object-position: center 20%; 
-                width: 160px;
-                height: 160px;
-                display: block;
+                object-position: center 15%; /* لتوسيط الوجه */
             }
+
+            /* Sections */
+            section.resume-section {
+                padding-top: 5rem !important;
+                padding-bottom: 5rem !important;
+                max-width: 75rem;
+                margin: 0 auto;
+                padding-left: 3rem;
+                padding-right: 3rem;
+            }
+            .subheading {
+                text-transform: uppercase;
+                font-weight: 500;
+                font-family: 'Saira Extra Condensed', sans-serif;
+                font-size: 1.5rem;
+                margin-bottom: 2rem;
+            }
+            .social-icon {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                height: 3.5rem;
+                width: 3.5rem;
+                background-color: #495057;
+                color: #fff;
+                border-radius: 100%;
+                font-size: 1.5rem;
+                margin-right: 1.5rem;
+                text-decoration: none;
+                transition: background-color 0.3s;
+            }
+            .social-icon:hover { background-color: var(--accent-color); }
 
             .btn-download-cv {
                 background-color: var(--primary-color);
-                color: white !important;
-                border: 2px solid var(--primary-color);
-                padding: 10px 20px;
+                color: #fff !important;
+                padding: 0.8rem 1.5rem;
                 border-radius: 5px;
                 text-decoration: none;
                 font-weight: bold;
+                text-transform: uppercase;
                 display: inline-flex;
                 align-items: center;
+                gap: 10px;
                 transition: 0.3s;
-                text-transform: uppercase;
-                font-size: 0.8rem;
-                margin-top: 1rem;
             }
-            .btn-download-cv:hover {
-                background-color: transparent;
-                color: var(--primary-color) !important;
+            .btn-download-cv:hover { opacity: 0.9; transform: translateY(-2px); }
+
+            /* Mobile adjustments */
+            @media (max-width: 991.98px) {
+                #sideNav { width: 100%; height: auto; position: relative; }
+                section.resume-section { padding: 3rem 1.5rem !important; }
             }
-            .subheading { font-weight: 500; font-size: 1.5rem; font-family: 'Saira Extra Condensed', sans-serif; margin-bottom: 2rem; }
-            .exp-item { margin-bottom: 3rem; }
-            .exp-list { list-style-type: disc; padding-left: 20px; font-size: 0.95rem; color: #444; }
-            .exp-list li { margin-bottom: 8px; }
-            .company-name { color: #1a3c5e; font-weight: 700; }
-            .date-span { font-weight: 700; color: #1a3c5e; min-width: 150px; text-align: right; }
+            @media (min-width: 992px) {
+                body { padding-left: 17rem; }
+            }
         </style>
     </head>
     <body id="page-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Mahmoud Emad Mahmoud</span>
+                <span class="d-block d-lg-none">Mahmoud Emad</span>
                 <span class="d-none d-lg-block">
                     <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="Mahmoud Emad" />
                 </span>
@@ -81,16 +149,16 @@
                 <div class="resume-section-content">
                     <h1 class="mb-0">Mahmoud <span class="text-primary">Emad</span></h1>
                     <div class="subheading mb-5">
-                        Banha, Qalyubia, Egypt · 01155672689 · 01222390425 ·
+                        Banha, Qalyubia, Egypt · 01155672689 · 
                         <a href="mailto:Mahmoudemad7497@gmail.com">Mahmoudemad7497@gmail.com</a>
                     </div>
                     <p class="lead mb-5">
-                        Dedicated Electrical Power and Machines Engineering graduate (Grade: Very Good) with 5 years of specialized onshore drilling experience with the Egyptian Drilling Company (EDC). Expert in the commissioning, maintenance, and complex troubleshooting of HH Electric VFD Rigs (1500 HP) and Caterpillar power generation sets (3512B, C15, 3406). Proven track record in optimizing PLC systems (Siemens, Schneider, Mitsubishi) and Rig-Sense instrumentation.
+                        Dedicated Electrical Power and Machines Engineering graduate (Grade: Very Good) with 5 years of specialized onshore drilling experience with the Egyptian Drilling Company (EDC). Expert in the commissioning, maintenance, and complex troubleshooting of HH Electric VFD Rigs (1500 HP) and Caterpillar power generation sets (3512B, C15, 3406).
                     </p>
                     <div class="social-icons d-flex align-items-center">
                         <a class="social-icon" href="https://www.linkedin.com/in/mahmoud-emad-0bb58913b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="Mahmoud_Emad_Electrical_Engineer.pdf" class="btn-download-cv ms-4" download>
-                            <i class="fas fa-file-download me-2"></i> Download Full CV
+                        <a href="Mahmoud_Emad_Electrical_Engineer.pdf" class="btn-download-cv" download>
+                            <i class="fas fa-file-download"></i> Download Full CV
                         </a>
                     </div>
                 </div>
@@ -100,34 +168,33 @@
 
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Work Experience</h2>
+                    <h2 class="mb-5">Experience</h2>
 
-                    <div class="exp-item d-flex flex-column flex-md-row justify-content-between">
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Senior Electrical Maintenance Engineer</h3>
-                            <div class="subheading company-name">Egyptian Drilling Company (EDC) | Rig 72</div>
-                            <ul class="exp-list">
-                                <li><strong>System Reliability Leadership:</strong> Orchestrated comprehensive maintenance for Caterpillar 3512B generators, ensuring 100% power availability.</li>
-                                <li><strong>Advanced VFD Troubleshooting:</strong> Managed Oilfield Electric VFD systems, ensuring precise control and minimal downtime.</li>
-                                <li><strong>Power Generation Mastery:</strong> Spearheaded full-cycle maintenance and load-sharing synchronization for CAT 3512B, C15, and 3406 sets.</li>
-                                <li><strong>PLC & Automation:</strong> Diagnosed hardware and logic faults within Siemens S7-300 and Schneider M340 PLC frameworks.</li>
-                                <li><strong>Critical Equipment:</strong> Directed maintenance for Varco TDS-11 Top Drive and Drawworks control systems.</li>
-                            </ul>
+                            <div class="subheading mb-3">Egyptian Drilling Company (EDC) | Rig 72</div>
+                            <p>Orchestrated comprehensive maintenance for Caterpillar 3512B generators and Oilfield Electric VFD systems. Diagnosed hardware and logic faults within Siemens S7-300 and Schneider M340 PLC frameworks.</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="date-span">Jan 2025 – Present</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">Jan 2025 - Present</span></div>
                     </div>
 
-                    <div class="exp-item d-flex flex-column flex-md-row justify-content-between">
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Electrical Maintenance Engineer</h3>
-                            <div class="subheading company-name">Egyptian Drilling Company (EDC)</div>
-                            <ul class="exp-list">
-                                <li>Performed daily maintenance on MCC panels and low/medium voltage distribution systems.</li>
-                                <li>Assisted in routine servicing of Caterpillar 3512B and C15 generator sets.</li>
-                                <li>Monitored Rig-Sense instrumentation and sensor accuracy for real-time drilling data.</li>
-                            </ul>
+                            <div class="subheading mb-3">Egyptian Drilling Company (EDC)</div>
+                            <p>Performed daily maintenance on MCC panels and distribution systems. Monitored Rig-Sense instrumentation and sensor accuracy for real-time drilling data acquisition.</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="date-span">May 2022 – Jan 2025</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">May 2022 - Jan 2025</span></div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Assigned Teaching Assistant</h3>
+                            <div class="subheading mb-3">El Shorouk Academy</div>
+                            <p>Delivered technical instruction and academic support for engineering students, focusing on core electrical concepts.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Oct 2021 - May 2022</span></div>
                     </div>
                 </div>
             </section>
@@ -137,14 +204,14 @@
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">El-Shorouk University</h3>
                             <div class="subheading mb-3">Bachelor's of Electrical Engineering</div>
-                            <p>Major: Electrical Power and Machines Engineering | Grade: Very Good</p>
-                            <p>Project: Design of Electrical Systems in Buildings with Revit | Grade: Excellent</p>
+                            <div>Major: Electrical Power and Machines Engineering | Grade: Very Good</div>
+                            <p>Graduation Project: Design of Electrical Systems with Revit | Grade: Excellent</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="date-span">2015 - 2020</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">2015 - 2020</span></div>
                     </div>
                 </div>
             </section>
@@ -153,18 +220,17 @@
 
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Technical Skills</h2>
+                    <h2 class="mb-5">Skills</h2>
                     <ul class="fa-ul mb-0">
-                        <li><span class="fa-li"><i class="fas fa-check text-primary"></i></span>HH Electric VFD (1500 HP) & ABB Drives</li>
-                        <li><span class="fa-li"><i class="fas fa-check text-primary"></i></span>CAT 3512B, C15, 3406 Power Generation</li>
-                        <li><span class="fa-li"><i class="fas fa-check text-primary"></i></span>Siemens S7-300 & Schneider M340 PLC</li>
-                        <li><span class="fa-li"><i class="fas fa-check text-primary"></i></span>Revit & AutoCAD Electrical Design</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>HH Electric VFD (1500 HP) & ABB Drives</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Caterpillar Power Generation (3512B, C15)</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>PLC Troubleshooting (Siemens, Schneider)</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Electrical Design (Revit, AutoCAD)</li>
                     </ul>
                 </div>
             </section>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="js/scripts.js"></script>
     </body>
 </html>
