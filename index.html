@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Mahmoud Emad | Senior Electrical Maintenance Engineer</title>
+    <title>Mahmoud Emad | Senior Electrical Engineer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
@@ -11,66 +11,58 @@
     
     <style>
         body { font-family: 'Muli', sans-serif; color: #343a40; padding-top: 54px; }
-        
         @media (min-width: 992px) {
             body { padding-top: 0; padding-left: 17rem; }
             #sideNav { 
                 text-align: center; top: 0; left: 0; display: flex; 
                 flex-direction: column; width: 17rem; height: 100vh; 
-                position: fixed; background-color: #1a3c5e; 
-                justify-content: center; align-items: center;
+                position: fixed; background-color: #1a3c5e; justify-content: center;
             }
-            #sideNav .navbar-nav { 
-                display: flex; flex-direction: column; width: 100%; 
-                padding: 0; margin-top: 2rem;
-            }
+            #sideNav .navbar-nav { display: flex; flex-direction: column; width: 100%; padding: 0; }
         }
-
-        /* تعديل القائمة: توسيط الكلام وجعله Bold جداً */
+        
+        /* طلبك: توسيط كلام القائمة وجعله عريض Bold */
         .nav-link {
-            text-align: center !important; 
-            font-weight: 800 !important; /* Bold عريض */
+            text-align: center !important;
+            font-weight: 800 !important;
             font-family: 'Saira Extra Condensed', sans-serif;
             color: rgba(255, 255, 255, 0.7) !important;
             text-transform: uppercase;
-            font-size: 1.3rem; /* تكبير الخط شوية */
-            padding: 1rem 0 !important;
+            font-size: 1.25rem;
+            padding: 0.8rem 0 !important;
             display: block;
             width: 100%;
         }
-        .nav-link:hover { color: #fff !important; background: rgba(255,255,255,0.05); }
+        .nav-link:hover { color: #fff !important; }
 
         .text-primary { color: #1a3c5e !important; }
         h1 { font-family: 'Saira Extra Condensed', sans-serif; font-size: 5.5rem; font-weight: 700; line-height: 5rem; text-transform: uppercase; }
-        h2 { font-family: 'Saira Extra Condensed', sans-serif; font-size: 3.5rem; text-transform: uppercase; margin-bottom: 2.5rem; color: #343a40; border-bottom: 2px solid #1a3c5e; display: inline-block; }
-        h3 { font-family: 'Saira Extra Condensed', sans-serif; font-size: 1.8rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.5rem; }
-        .subheading { font-family: 'Saira Extra Condensed', sans-serif; font-weight: 500; font-size: 1.4rem; text-transform: uppercase; color: #868e96; margin-bottom: 1.5rem; }
+        h2 { font-family: 'Saira Extra Condensed', sans-serif; font-size: 3.5rem; text-transform: uppercase; margin-bottom: 2rem; color: #343a40; border-bottom: 2px solid #1a3c5e; display: inline-block; }
+        h3 { font-family: 'Saira Extra Condensed', sans-serif; font-size: 1.7rem; font-weight: 700; text-transform: uppercase; }
+        .subheading { font-family: 'Saira Extra Condensed', sans-serif; font-weight: 500; font-size: 1.3rem; text-transform: uppercase; color: #868e96; margin-bottom: 1rem; }
         
-        .img-profile { width: 160px; height: 160px; object-fit: cover; object-position: center 20%; border: 8px solid rgba(255, 255, 255, 0.2); }
+        .img-profile { width: 160px; height: 160px; object-fit: cover; object-position: center 20%; border: 8px solid rgba(255, 255, 255, 0.2); margin-bottom: 2rem; }
         section.resume-section { display: flex; align-items: center; padding: 5rem 3rem; min-height: 100vh; border-bottom: 1px solid #dee2e6; }
         
-        .btn-download { background-color: #1a3c5e; color: white !important; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 10px; border: 2px solid #1a3c5e; transition: 0.3s; margin-top: 20px; }
-        .btn-download:hover { background-color: transparent; color: #1a3c5e !important; }
+        /* زر التحميل */
+        .btn-cv { background-color: #1a3c5e; color: white !important; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 8px; margin-top: 15px; border: 2px solid #1a3c5e; }
+        .btn-cv:hover { background-color: transparent; color: #1a3c5e !important; }
         
         .social-icon { display: inline-flex; align-items: center; justify-content: center; height: 3.5rem; width: 3.5rem; background-color: #495057; color: #fff; border-radius: 100%; font-size: 1.5rem; margin-right: 1.5rem; text-decoration: none; }
-        .social-icon:hover { background-color: #1a3c5e; }
         
-        .exp-list { list-style: none; padding-left: 0; }
-        .exp-list li { position: relative; padding-left: 1.5rem; margin-bottom: 0.8rem; line-height: 1.5; }
-        .exp-list li::before { content: "•"; color: #1a3c5e; font-weight: bold; position: absolute; left: 0; font-size: 1.2rem; }
-        .date-text { color: #1a3c5e; font-weight: 700; font-size: 1.1rem; }
+        .exp-list { list-style: none; padding-left: 0; margin-top: 10px; }
+        .exp-list li { position: relative; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+        .exp-list li::before { content: "•"; color: #1a3c5e; font-weight: bold; position: absolute; left: 0; }
     </style>
 </head>
 <body id="page-top">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-        <div class="navbar-brand">
-            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="Mahmoud Emad" /></span>
-        </div>
-        <div class="collapse navbar-collapse show" id="navbarResponsive">
+        <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="Mahmoud Emad" /></span>
+        <div class="collapse navbar-collapse show">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#summary">Summary</a></li>
-                <li class="nav-item"><a class="nav-link" href="#expertise">Technical Expertise</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">Summary</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Technical Expertise</a></li>
                 <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                 <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                 <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
@@ -79,30 +71,37 @@
     </nav>
 
     <div class="container-fluid p-0">
-        
-        <section class="resume-section" id="summary">
+        <section class="resume-section" id="about">
             <div class="w-100">
                 <h1 class="mb-0">Mahmoud <span class="text-primary">Emad</span></h1>
-                <div class="subheading mb-4">Banha, Egypt · 01155672689 · <a href="mailto:Mahmoudemad7497@gmail.com" class="text-primary">Mahmoudemad7497@gmail.com</a></div>
-                <p class="lead mb-5">Dedicated Electrical Power and Machines Engineering graduate (Grade: Very Good) with 5 years of specialized onshore drilling experience with the Egyptian Drilling Company (EDC). Expert in the commissioning, maintenance, and complex troubleshooting of HH Electric VFD Rigs (1500 HP) and Caterpillar power generation sets (3512B, C15, 3406). Proven track record in optimizing PLC systems and instrumentation.</p>
+                <div class="subheading mb-4">Banha, Egypt · 01155672689 · 01222390425 · <a href="mailto:Mahmoudemad7497@gmail.com">Mahmoudemad7497@gmail.com</a></div>
+                <p class="lead mb-4">Dedicated Electrical Power and Machines Engineering graduate (Grade: Very Good) with 5 years of specialized onshore drilling experience with the Egyptian Drilling Company (EDC). Expert in the commissioning, maintenance, and complex troubleshooting of HH Electric VFD Rigs (1500 HP) and Caterpillar power generation sets (3512B, C15, 3406). Proven track record in optimizing PLC systems (Siemens, Schneider, Mitsubishi) and Rig-Sense instrumentation.</p>
                 <div class="social-icons d-flex align-items-center">
-                    <a class="social-icon" href="https://www.linkedin.com/in/mahmoud-emad-0bb58913b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="Mahmoud_Emad_CV.pdf" class="btn-download" download><i class="fas fa-file-download"></i> Download Full CV</a>
+                    <a class="social-icon" href="https://www.linkedin.com/in/mahmoud-emad-0bb58913b/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="Mahmoud_Emad_CV.pdf" class="btn-cv" download><i class="fas fa-file-download"></i> Download Full CV</a>
                 </div>
             </div>
         </section>
 
-        <section class="resume-section" id="expertise">
+        <section class="resume-section" id="skills">
             <div class="w-100">
                 <h2 class="mb-5">Technical Expertise</h2>
                 <div class="row">
-                    <div class="col-md-6 mb-4">
-                        <h3 class="text-primary">Rig Power & VFD</h3>
-                        <p>HH Electric VFD (1500 HP), ABB Drives, Varco TDS-11 Top Drive, AC Motor Maintenance.</p>
+                    <div class="col-md-6 mb-3">
+                        <h3 class="text-primary h5">Rig Power & VFD</h3>
+                        <p class="small">HH Electric VFD (1500 HP), ABB Drives, MCC Maintenance, Varco TDS-11 Top Drive, Draw works Controls, AC Motor Maintenance.</p>
                     </div>
-                    <div class="col-md-6 mb-4">
-                        <h3 class="text-primary">Power Generation</h3>
-                        <p>CAT 3512B, C15 Emergency Gen, CAT 3406, Synchronization.</p>
+                    <div class="col-md-6 mb-3">
+                        <h3 class="text-primary h5">Power Generation</h3>
+                        <p class="small">CAT 3512B, C15 Emergency Gen, CAT 3406, Transformers, Load Sharing & Synchronization.</p>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <h3 class="text-primary h5">Automation & PLC</h3>
+                        <p class="small">Siemens S7-300, Schneider M340, Mitsubishi Q-Series, Step-7 Troubleshooting.</p>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <h3 class="text-primary h5">Instrumentation & Software</h3>
+                        <p class="small">Rig-Sense, Honeywell H2S Detection, Revit (Advanced), AutoCAD, Dialux.</p>
                     </div>
                 </div>
             </div>
@@ -111,26 +110,44 @@
         <section class="resume-section" id="experience">
             <div class="w-100">
                 <h2 class="mb-5">Experience</h2>
+                
                 <div class="mb-5">
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <h3 class="mb-0">Senior Electrical Maintenance Engineer</h3>
-                        <div class="date-text">JAN 2025 – Present</div>
+                        <div class="text-primary fw-bold">JAN 2025 – Present</div>
                     </div>
-                    <div class="subheading mb-3 text-dark">EDC | Rig 72 | 1500 HP VFD</div>
+                    <div class="subheading text-dark">EDC | Rig 72 | HH Electric VFD Rig 1500 HP</div>
                     <ul class="exp-list">
-                        <li>System Reliability Leadership: CAT 3512B maintenance.</li>
-                        <li>Advanced VFD Troubleshooting: Oilfield Electric VFD systems.</li>
-                        <li>PLC & Automation Management: Siemens S7-300, Schneider M340.</li>
+                        <li><strong>System Reliability:</strong> Maintenance for CAT 3512B, ensuring 100% availability.</li>
+                        <li><strong>VFD Troubleshooting:</strong> Managed Oilfield Electric VFD systems and resolving complex drive faults.</li>
+                        <li><strong>PLC Management:</strong> Diagnosed hardware/logic faults in Siemens S7-300, Schneider M340, and Mitsubishi.</li>
+                        <li><strong>Critical Equipment:</strong> Directed maintenance for Varco TDS-11 Top Drive and Drawworks.</li>
+                        <li><strong>Safety:</strong> Maintained Honeywell H2S Gas Detection and Rig-Sense systems.</li>
                     </ul>
                 </div>
 
                 <div class="mb-5">
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <h3 class="mb-0">Electrical Maintenance Engineer</h3>
-                        <div class="date-text">May 2022 – Jan 2025</div>
+                        <div class="text-primary fw-bold">May 2022 – Jan 2025</div>
                     </div>
-                    <div class="subheading mb-3 text-dark">EDC</div>
-                    <p>Daily maintenance on MCC panels and LV/MV distribution systems.</p>
+                    <div class="subheading text-dark">Egyptian Drilling Company (EDC)</div>
+                    <p>Daily maintenance on MCC panels, LV/MV distribution, and servicing CAT 3512B and C15 sets.</p>
+                </div>
+
+                <div class="mb-5">
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <h3 class="mb-0">Assigned Teaching Assistant</h3>
+                        <div class="text-primary fw-bold">Oct 2021 – May 2022</div>
+                    </div>
+                    <div class="subheading text-dark">El Shorouk Academy</div>
+                    <p>Delivered technical lectures and led sessions for engineering students.</p>
+                </div>
+
+                <div class="mb-5">
+                    <h3 class="mb-0">Electrical Design Engineer</h3>
+                    <div class="subheading text-dark">Idea's Consultant Office (2022)</div>
+                    <p>Developed electrical designs using Revit and AutoCAD as per international standards.</p>
                 </div>
             </div>
         </section>
@@ -138,12 +155,21 @@
         <section class="resume-section" id="education">
             <div class="w-100">
                 <h2 class="mb-5">Education</h2>
-                <h3 class="mb-0">El-Shorouk University</h3>
-                <div class="subheading mb-3">Bachelor's of Electrical Engineering (2015 - 2020)</div>
-                <p>Grade: <strong>Very Good</strong> | Project: <strong>Excellent</strong></p>
+                <h3>El-Shorouk University</h3>
+                <div class="subheading mb-2">Bachelor's of Electrical Engineering (2015 - 2020)</div>
+                <p>Grade: <strong>Very Good</strong> | Project: <strong>Excellent (Revit Design)</strong></p>
             </div>
         </section>
 
+        <section class="resume-section" id="certifications">
+            <div class="w-100">
+                <h2 class="mb-5">Certifications & Safety</h2>
+                <ul class="exp-list">
+                    <li><strong>Automation:</strong> ABB VFD, PLC Step-7 300 Repair, Classic Control.</li>
+                    <li><strong>Rig Safety:</strong> PTW, WMS, H2S Awareness, Work at Height, Firefighting.</li>
+                </ul>
+            </div>
+        </section>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
