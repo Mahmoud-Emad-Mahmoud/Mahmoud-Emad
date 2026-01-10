@@ -14,26 +14,25 @@
             body { padding-top: 0; padding-left: 17rem; }
             #sideNav { text-align: center; top: 0; left: 0; display: flex; flex-direction: column; width: 17rem; height: 100vh; position: fixed; background-color: #1a3c5e; justify-content: center; align-items: center; }
             #sideNav .navbar-nav { display: flex; flex-direction: column; width: 100%; padding: 0; }
-            /* القائمة الجانبية: عريضة وفي النص */
             .nav-link { text-align: center !important; font-weight: 800 !important; font-family: 'Saira Extra Condensed', sans-serif; color: rgba(255, 255, 255, 0.7) !important; text-transform: uppercase; font-size: 1.2rem; padding: 0.8rem 0 !important; display: block; width: 100%; }
         }
         .text-primary { color: #1a3c5e !important; }
         h1 { font-family: 'Saira Extra Condensed', sans-serif; font-size: 5rem; font-weight: 700; line-height: 4.5rem; text-transform: uppercase; }
         h2 { font-family: 'Saira Extra Condensed', sans-serif; font-size: 3rem; text-transform: uppercase; margin-bottom: 2rem; color: #343a40; border-bottom: 2px solid #1a3c5e; display: inline-block; }
         h3 { font-family: 'Saira Extra Condensed', sans-serif; font-size: 1.6rem; font-weight: 700; text-transform: uppercase; margin-top: 1.5rem; }
-        .subheading { font-family: 'Saira Extra Condensed', sans-serif; font-weight: 500; font-size: 1.2rem; text-transform: uppercase; color: #bd5d38; margin-bottom: 1rem; }
+        .subheading { font-family: 'Saira Extra Condensed', sans-serif; font-weight: 500; font-size: 1.2rem; text-transform: uppercase; color: #1a3c5e; margin-bottom: 1rem; }
         .img-profile { width: 160px; height: 160px; object-fit: cover; border: 8px solid rgba(255, 255, 255, 0.2); margin-bottom: 2rem; }
         section.resume-section { display: flex; align-items: center; padding: 3rem; min-height: 100vh; border-bottom: 1px solid #dee2e6; }
         
-        /* حل نهائي لمشكلة تداخل الزرار */
-        .btn-cv-container { margin-top: 50px; display: block; border-top: 1px solid #eee; padding-top: 20px; }
-        .social-icon-link { display: inline-flex; align-items: center; justify-content: center; height: 3.5rem; width: 3.5rem; background-color: #495057; color: #fff; border-radius: 100%; font-size: 1.5rem; text-decoration: none; margin-bottom: 25px; }
-        .social-icon-link:hover { background-color: #1a3c5e; }
+        /* ضبط المسافات بين الأزرار */
+        .action-container { margin-top: 40px; }
+        .social-link-item { margin-bottom: 30px; display: block; }
+        .social-icon { display: inline-flex; align-items: center; justify-content: center; height: 3.5rem; width: 3.5rem; background-color: #495057; color: #fff; border-radius: 100%; font-size: 1.5rem; text-decoration: none; }
         
-        .btn-download-final { background-color: #1a3c5e; color: white !important; padding: 15px 30px; border-radius: 8px; text-decoration: none !important; font-weight: bold; display: inline-block; border: 2px solid #1a3c5e; transition: 0.3s; }
-        .btn-download-final:hover { background-color: transparent; color: #1a3c5e !important; }
+        .btn-cv-download { background-color: #1a3c5e; color: white !important; padding: 15px 30px; border-radius: 8px; text-decoration: none !important; font-weight: bold; display: inline-block; border: 2px solid #1a3c5e; transition: 0.3s; margin-top: 10px; }
+        .btn-cv-download:hover { background-color: transparent; color: #1a3c5e !important; }
         
-        .exp-list { list-style: none; padding-left: 0; }
+        .exp-list { list-style: none; padding-left: 0; margin-bottom: 1.5rem; }
         .exp-list li { position: relative; padding-left: 1.2rem; margin-bottom: 0.5rem; }
         .exp-list li::before { content: "•"; color: #1a3c5e; font-weight: bold; position: absolute; left: 0; }
     </style>
@@ -56,13 +55,14 @@
         <section class="resume-section" id="summary">
             <div class="w-100">
                 <h1 class="mb-0">Mahmoud <span class="text-primary">Emad</span></h1>
-                <div class="subheading mb-4">Banha, Egypt · 01155672689 · 01222390425 · <a href="mailto:Mahmoudemad7497@gmail.com" style="text-transform: none;">Mahmoudemad7497@gmail.com</a></div>
+                <div class="subheading mb-4">Banha, Egypt · 01155672689 · 01222390425 · <a href="mailto:Mahmoudemad7497@gmail.com">Mahmoudemad7497@gmail.com</a></div>
                 <p class="lead mb-4">Dedicated Electrical Power and Machines Engineering graduate (Grade: Very Good) with 5 years of specialized onshore drilling experience with the Egyptian Drilling Company (EDC). Expert in the commissioning, maintenance, and complex troubleshooting of HH Electric VFD Rigs (1500 HP) and Caterpillar power generation sets (3512B, C15, 3406). Proven track record in optimizing PLC systems (Siemens, Schneider, Mitsubishi) and Rig-Sense instrumentation to maximize uptime and ensure safety in H2S environments.</p>
                 
-                <div class="btn-cv-container">
-                    <a class="social-icon-link" href="https://www.linkedin.com/in/mahmoud-emad-0bb58913b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <br>
-                    <a href="Mahmoud_Emad_Electrical_Engineer.pdf" class="btn-download-final" download>
+                <div class="action-container">
+                    <div class="social-link-item">
+                        <a class="social-icon" href="https://www.linkedin.com/in/mahmoud-emad-0bb58913b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="Mahmoud_Emad_Electrical_Engineer.pdf" class="btn-cv-download" download>
                         <i class="fas fa-file-download"></i> Download Full CV
                     </a>
                 </div>
@@ -88,8 +88,8 @@
                 <h2 class="mb-5">Experience</h2>
                 
                 <div class="mb-5">
-                    <h3 class="mb-0">Senior Electrical Maintenance Engineer</h3>
-                    <div class="subheading">Egyptian Drilling Company EDC | EDC Rig 72 | HH Electric VFD Rig 1500 HP | JAN 2025 – Present</div>
+                    <h3 class="mb-0 text-primary">Senior Electrical Maintenance Engineer</h3>
+                    <div class="subheading mb-2">Egyptian Drilling Company EDC | Onshore Rig | EDC Rig 72 | HH Electric VFD Rig 1500 HP | JAN 2025 – Present</div>
                     <ul class="exp-list">
                         <li><strong>System Reliability Leadership:</strong> Orchestrated comprehensive maintenance for Caterpillar 3512B generators, ensuring 100% power availability for critical drilling operations.</li>
                         <li><strong>Advanced VFD Troubleshooting:</strong> Managed advanced troubleshooting and preventative maintenance for Oilfield Electric VFD systems, ensuring precise control of drilling motors and minimal system downtime and resolving complex drive faults to minimize non-productive time (NPT).</li>
@@ -100,11 +100,9 @@
                         <li><strong>Instrumentation & Data:</strong> Overseeing Rig-Sense systems, including the calibration of sensors and maintenance of data acquisition controls to ensure accurate real-time drilling metrics.</li>
                         <li><strong>Safety & Security Systems:</strong> Guaranteed the continuous operational integrity of the Honeywell H2S Gas Detection system and CCTV surveillance, maintaining a secure environment and full compliance with safety protocols.</li>
                     </ul>
-                </div>
 
-                <div class="mb-5">
-                    <h3 class="mb-0">Electrical Maintenance Engineer</h3>
-                    <div class="subheading">May 2022 – Jan 2025 | EDC</div>
+                    <h3 class="mb-0 text-primary">Electrical Maintenance Engineer</h3>
+                    <div class="subheading mb-2">May 2022 – Jan 2025 | EDC</div>
                     <ul class="exp-list">
                         <li>Performed daily preventative and corrective maintenance on MCC panels and low/medium voltage distribution systems.</li>
                         <li>Assisted in the inspection and routine servicing of Caterpillar 3512B and C15 generator sets.</li>
@@ -112,11 +110,9 @@
                         <li>Executed onsite repairs for AC motors and transformers, ensuring equipment reliability.</li>
                         <li>Monitored Rig-Sense instrumentation and sensor accuracy for real-time drilling data acquisition.</li>
                     </ul>
-                </div>
 
-                <div class="mb-5">
-                    <h3 class="mb-0">Junior Electrical Engineer</h3>
-                    <div class="subheading">Oct 2020 – May 2022 | EDC</div>
+                    <h3 class="mb-0 text-primary">Junior Electrical Engineer</h3>
+                    <div class="subheading mb-2">Oct 2020 – May 2022 | EDC</div>
                     <ul class="exp-list">
                         <li>Developed a foundational understanding of rig power systems and safety protocols (PTW, H2S).</li>
                         <li>Gained hands-on experience in basic electrical repairs and component replacements under supervision.</li>
@@ -126,8 +122,8 @@
                 </div>
 
                 <div class="mb-5">
-                    <h3 class="mb-0">Assigned Teaching Assistant</h3>
-                    <div class="subheading">El Shorouk Academy | Oct 2021 – May 2022</div>
+                    <h3 class="mb-0 text-primary">Assigned Teaching Assistant</h3>
+                    <div class="subheading mb-2">El Shorouk Academy | Oct 2021 – May 2022</div>
                     <ul class="exp-list">
                         <li><strong>Technical Instruction:</strong> Delivered academic lectures and led technical discussion sessions for engineering students, focusing on core electrical concepts.</li>
                         <li><strong>Mentorship & Guidance:</strong> Provided individual and group technical guidance, assisting students in complex problem-solving and academic development.</li>
@@ -136,8 +132,8 @@
                 </div>
 
                 <div class="mb-5">
-                    <h3 class="mb-0">Electrical Design Engineer</h3>
-                    <div class="subheading">Idea's Consultant Office | Jan 2022 – May 2022</div>
+                    <h3 class="mb-0 text-primary">Electrical Design Engineer</h3>
+                    <div class="subheading mb-2">Idea's Consultant Office | Jan 2022 – May 2022</div>
                     <ul class="exp-list">
                         <li><strong>Design & Engineering:</strong> Developed comprehensive electrical designs and technical documentation tailored to client specifications and international standards.</li>
                         <li><strong>Technical Proposals:</strong> Prepared detailed technical offers and material take-offs aligned with project-specific engineering requirements.</li>
@@ -150,35 +146,30 @@
         <section class="resume-section" id="education">
             <div class="w-100">
                 <h2 class="mb-5">Education</h2>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">El-Shorouk University</h3>
-                        <div class="subheading mb-3">Bachelor's of Electrical Engineering | 2015 - 2020</div>
-                        <p>Major: Electrical Power and Machines Engineering | Grade: <strong>Very Good</strong></p>
-                        <p>Graduation Project: Design of Electrical Systems and Services in Buildings with Revit Software | Grade: <strong>Excellent</strong></p>
-                    </div>
+                <div class="mb-3">
+                    <h3 class="mb-0">El-Shorouk University</h3>
+                    <div class="subheading mb-2">Bachelor's of Electrical Engineering | 2015 - 2020</div>
+                    <p class="lead">Major: Electrical Power and Machines Engineering | Grade: <strong>Very Good</strong></p>
+                    <p class="lead">Graduation Project: Design of Electrical Systems and Services in Buildings with Revit Software | Grade: <strong>Excellent</strong></p>
                 </div>
             </div>
         </section>
 
         <section class="resume-section" id="certifications">
             <div class="w-100">
-                <h2 class="mb-5">Certifications & Skills</h2>
-                <h3 class="mb-3">Courses</h3>
-                <ul class="exp-list mb-5">
+                <h2 class="mb-5">CERTIFICATIONS & COURSES</h2>
+                <ul class="exp-list lead">
                     <li><strong>Automation:</strong> Electric Motor & Drive Programming (ABB VFD), PLC Step-7 300 Repair, Classic Control.</li>
                     <li><strong>Power:</strong> Power System Distribution, AC Generators Maintenance, Electrical Design (Revit).</li>
                     <li><strong>Rig Safety (Certified):</strong> PTW, WMS, H2S Awareness, Work at Height, Firefighting, First Aid, Mechanical Lifting.</li>
                 </ul>
-                <h3 class="mb-3">Languages & Soft Skills</h3>
-                <ul class="exp-list">
+                <h2 class="mb-4">LANGUAGES & SKILLS</h2>
+                <ul class="exp-list lead">
                     <li><strong>Languages:</strong> Arabic (Native), English (Very Good - Professional Working Proficiency).</li>
                     <li><strong>Soft Skills:</strong> Leadership, Technical Mentorship, High-Pressure Problem Solving, Teamwork.</li>
                 </ul>
             </div>
         </section>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
